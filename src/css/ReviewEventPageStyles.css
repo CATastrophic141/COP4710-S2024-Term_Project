@@ -1,0 +1,230 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+	display: flex;
+	flex-direction: column; /* Make the layout vertical */
+	height: 100vh;
+}
+
+.rev-header-banner {
+	background: black;
+	height: 10dvh; /* 10% of the viewport height */
+	display: flex;
+	align-items: center; /* Center items vertically */
+	padding: 0 20px; /* Add padding on the sides */
+}
+
+.rev-header-logo {
+	height: 4vh; /* Adjust height of logo */
+	margin-right: 20px; /* Add some spacing between logo and buttons */
+}
+
+.rev-header-button-container {
+	display: flex;
+	flex-grow: 1; /* Allow buttons to take up remaining space */
+	justify-content: flex-end; /* Align buttons to the right */
+	align-items: center; /* Center items vertically */
+}
+
+.rev-header-button,
+.rev-header-link {
+	background-color: gray;
+	height: 2dvh;
+	font-weight: 500;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.rev-header-button:hover,
+.rev-header-link:hover {
+	background-color: #2ebf91;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 90dvh; /* 90% of the viewport height */
+}
+
+.rev-feed-section {
+	/* width: auto; */
+	padding: 5%;
+	background: linear-gradient(to top, #a597c1, #8fb3a6);
+	position: relative;
+}
+
+.rev-feed-content-box {
+	background-color: #fff;
+	border-radius: 15px;
+	box-shadow: 0 2px 4px rgba(175, 26, 26, 0.1);
+	padding: 20px;
+	height: 70dvh;
+	width: 90%;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.rev-search-bar {
+	display: flex;
+	align-items: center; /* Align items vertically */
+	background-color: #8360c3;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px 5px;
+}
+
+.rev-search-bar-text {
+	width: 80%;
+	padding: 5px;
+	margin-right: 5%;
+	border-radius: 5px;
+}
+
+.rev-search-bar-button {
+	width: 15%;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.rev-posts-container {
+	max-height: calc(100% - 60px); /* Adjust as needed */
+	overflow-y: auto;
+}
+
+.rev-post-box {
+	margin: 5px 5px 5px 10px;
+	padding: 5px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	background-color: white;
+}
+
+.rev-post-header {
+	display: flex;
+	justify-content: space-between; /* Evenly space the elements */
+	background-color: #daf8ff;
+	color: black;
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+	margin-bottom: 10px;
+}
+.rev-post-footer {
+	display: flex;
+	justify-content: space-between; /* Place elements at the ends */
+	align-items: center; /* Center items vertically */
+	background-color: #daf8ff;
+	color: black;
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+	margin-top: 10px;
+}
+
+.rev-post-footer p {
+	margin: 0; /* Remove default margin */
+}
+
+.approve-btn {
+	background-color: #299c51;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.throw-out-btn {
+	background-color: #db3434;
+	margin-left: 20px;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.rev-post-description {
+	padding: 5px;
+}
+
+/* Tabs at the top of content-box */
+.rev-tabs {
+	display: flex;
+	width: 100%; /* Make tabs span the full width */
+}
+
+.rev-tab {
+	flex: 1; /* Divide the width evenly among tabs */
+	font-size: 16px;
+	padding: 10px 0; /* Adjust vertical padding */
+	cursor: pointer;
+	border: 2px solid #8360c3;
+	border-bottom: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: transparent; /* Remove default background */
+	text-align: center; /* Center the text within each tab */
+	transition: ease-in 0.1s;
+	font-size: 16px; /* Set initial font size */
+	font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+	.rev-tab {
+		font-size: 14px;
+	}
+}
+
+.rev-tab.active {
+	background-color: #8360c3;
+	color: #fff;
+}
+
+.rev-tab-content {
+	background-color: white;
+	border: 1px solid #ffca00;
+	border-radius: 5px;
+	padding: 20px;
+	margin-top: -1px;
+	flex-grow: 1;
+}
+
+.rev-tab-container {
+	display: flex;
+	width: 100%; /* Make the tab container span the full width */
+	border-bottom: 1px solid transparent; /* Add a bottom border for separation */
+}
+
+/*Drop Down Tab*/
+.rev-dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.rev-dropdown-content {
+	display: block;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	top: calc(100%); /* Shift dropdown below the button */
+	left: calc(10px); /* Align with the left edge of the button */
+}
+
+.rev-dropdown-content .rev-dropdown-link {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	color: #000;
+}
+
+.rev-dropdown-content .rev-dropdown-link:hover {
+	background-color: #f1f1f1;
+}

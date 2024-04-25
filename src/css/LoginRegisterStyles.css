@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+}
+
+.log-hero {
+	height: 100vh; /* Set height to 100% of the viewport height */
+	width: 100%;
+	background-image: linear-gradient(to top, #8360c3, #2ebf91);
+	background-position: center;
+	background-size: cover;
+	display: flex; /* Use flexbox */
+	align-items: center; /* Center items vertically */
+	justify-content: center; /* Center items horizontally */
+	position: absolute;
+}
+
+.page-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.log-form-box {
+	display: flex;
+	flex-direction: column; /* Stack items vertically */
+	align-items: center; /* Center items horizontally */
+	justify-content: center; /* Center items vertically */
+	width: fit-content; /* Adjust width to content */
+	height: fit-content; /* Adjust height to content */
+	padding: 20px; /* Add padding for spacing */
+	border-radius: 10px; /* Rounded corners */
+	background-color: #f0f0f0; /* Background color */
+}
+
+.log-form-box img {
+	width: 100%; /* Make the logo the same width as the form */
+	max-width: 280px; /* Limit maximum width for the logo */
+	margin-bottom: 20px; /* Add margin at the bottom of the logo */
+}
+
+.log-input-group {
+	margin-top: 20px; /* Add margin at the top of the form */
+}
+
+.log-input-field {
+	margin-bottom: 10px; /* Add margin at the bottom of each input field */
+}
+
+.log-submit-btn {
+	margin-top: 20px; /* Add margin at the top of the submit button */
+}
+
+.log-input-group {
+	top: 180px;
+	width: 280px;
+}
+
+.log-input-field,
+select.log-input-field {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+}
+
+.link-btn {
+	font-weight: 600;
+	width: 75%;
+	margin: 5px;
+	color: #fff;
+	padding: 10px 30px;
+	cursor: pointer;
+	border-radius: 10px; /* Rounded corners */
+	background-color: #999; /* Background color */
+	border: 0;
+	border-color: #bdbdbd;
+	outline: none;
+	position: relative;
+	text-decoration: none; /* Remove underline */
+	transition: 0.5s;
+}
+
+.link-btn:hover {
+	background: #bdbdbd;
+	box-shadow: 0 0 8px 4px #dadada;
+}
+
+.link-btn-alt {
+	font-weight: 600;
+	width: 75%;
+	margin: 5px;
+	color: #fff;
+	padding: 10px 30px;
+	cursor: pointer;
+	border-radius: 10px; /* Rounded corners */
+	background-color: #a391c3; /* Background color */
+	border: 0;
+	border-color: #bdbdbd;
+	outline: none;
+	position: relative;
+	text-decoration: none; /* Remove underline */
+	transition: 0.5s;
+}
+
+.link-btn-alt:hover {
+	background: #aa9ec0;
+	box-shadow: 0 0 8px 4px #dadada;
+}
+
+.reg-link-btn {
+	font-weight: 600;
+	width: fit-content;
+	margin-top: 20px;
+	color: #007bff; /* Blue color for link */
+	text-decoration: none; /* Remove underline */
+	border: none;
+	background: none;
+	cursor: pointer;
+	transition: color 0.3s; /* Smooth color transition */
+}
+
+.reg-link-btn:hover {
+	color: #0056b3; /* Darker blue color on hover */
+}
+
+.log-submit-btn {
+	font-weight: 600;
+	color: rgb(100, 100, 100);
+	width: 85%;
+	height: 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	background: lightgray;
+	outline: none;
+	border-radius: 30px;
+	border-color: #bdbdbd;
+	transition: 0.5s;
+}
+
+.log-submit-btn:hover {
+	background: #bdbdbd;
+	box-shadow: 0 0 8px 4px #dadada;
+}
+
+.errorText {
+	color: red;
+	padding-top: 12px;
+	padding-bottom: 0px;
+}
