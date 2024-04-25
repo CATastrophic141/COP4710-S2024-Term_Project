@@ -1,5 +1,6 @@
 # Spring 2024 COP4710 Database Systems Term Project
 
+### BY Alex Green and Rylan Simpson
 ### Dependencies: Node.js (React), npm, and MySQL
 
 ## Starting project:
